@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kingfisher.mapper.ResourcesMapper">
+  <resultMap id="BaseResultMap" type="com.kingfisher.model.Resources">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="resUrl" jdbcType="VARCHAR" property="resurl" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="parentId" jdbcType="INTEGER" property="parentid" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="permssions" jdbcType="VARCHAR" property="permssions" />
+  </resultMap>
+  
+  <select id="queryAllResources" resultType="com.kingfisher.model.Resources">
+		select * from
+		resources
+	</select>
+</mapper>

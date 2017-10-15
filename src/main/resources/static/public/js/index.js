@@ -44,6 +44,8 @@ var vm = new Vue({
 			$.getJSON("sys/menu/user?_"+$.now(), function(r){
 				vm.menuList = r.menuList;
                 window.permissions = r.permissions;
+                alert(r.menuList.length);
+                alert(r.permissions);
 			});
 		},
 		getUser: function(){
@@ -100,6 +102,7 @@ function routerList(router, menuList){
 	for(var key in menuList){
 		var menu = menuList[key];
 		if(menu.type == 0){
+			alert(menu);
 			routerList(router, menu.list);
 		}else if(menu.type == 1){
 			router.add('#'+menu.url, function() {

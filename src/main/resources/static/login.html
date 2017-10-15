@@ -1,200 +1,71 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
-ol,ul{list-style:none;margin:0;padding:0;}
-blockquote,q{quotes:none;}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
-table{border-collapse:collapse;border-spacing:0;}
-a{text-decoration:none;}
-.txt-rt{text-align:right;}/* text align right */
-.txt-lt{text-align:left;}/* text align left */
-.txt-center{text-align:center;}/* text align center */
-.float-rt{float:right;}/* float right */
-.float-lt{float:left;}/* float left */
-.clear{clear:both;}/* clear float */
-.pos-relative{position:relative;}/* Position Relative */
-.pos-absolute{position:absolute;}/* Position Absolute */
-.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
-.vertical-top{	vertical-align:top;}/* vertical align top */
-.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
-nav.vertical ul li{	display:block;}/* vertical menu */
-nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
-img{max-width:100%;}
-body{
-   padding:100px 0px 30px 0px;
-   font-family: 'Roboto', sans-serif;
-   font-size: 100%;
-}
-.login {
-  width: 32%;
-  margin: 0 auto;
-}
-.login h2 {
-  font-size: 30px;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-  margin: 0px 0px 50px 0px;
-  font-family: 'Droid Serif', serif;
-}
-.login-top {
-  background: #E1E1E1;
-  border-radius: 25px 25px 0px 0px;
-  -webkit-border-radius:  25px 25px 0px 0px;
-  -moz-border-radius: 25px 25px 0px 0px;
-  -o-border-radius: 25px 25px 0px 0px;
-  padding: 40px 60px;
-}
-.login-top h1 {
-  text-align: center;
-  font-size: 27px;
-  font-weight: 500;
-  color: #F45B4B;
-  margin: 0px 0px 20px 0px;
-}
-.login-top input[type="text"] {
-	outline: none;
-  font-size: 15px;
-  font-weight: 500;
-  color: #818181;
-  padding: 15px 20px;
-  background: #CACACA;
-  border: 1px solid #ccc;
-  border-radius:25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -o-border-radius: 25px;
-  margin: 0px 0px 12px 0px;
-  width: 88%;
-  -webkit-appearance: none;
-}
-.login-top input[type="password"]{
-	outline: none;
-  font-size: 15px;
-  font-weight: 500;
-  color: #818181;
-  padding: 15px 20px;
-  background: #CACACA;
-  border: 1px solid #ccc;
-  border-radius:25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -o-border-radius: 25px;
-  margin: 0px 0px 12px 0px;
-  width: 88%;
-  -webkit-appearance: none;
-}
-.forgot  a{
-  font-size: 13px;
-  font-weight: 500;
-  color: #F45B4B;
-  display: inline-block;
-  border-right: 2px solid #F45B4B;
-  padding: 0px 7px 0px 0px;
-}
-.forgot  a:hover{
-  color: #818181;
-}
-.forgot input[type="submit"] {
-  background: #F45B4B;
-  color: #FFF;
-  font-size: 17px;
-  font-weight: 400;
-  padding: 8px 7px;
-  width: 20%;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 6px;
-  -webkit-border-radius: 19px;
-  -moz-border-radius: 6px;
-  -o-border-radius: 6px;
-  margin: 0px 7px 0px 3px;
-  outline: none;
-  border: none;
-}
-.forgot input[type="submit"]:hover {
-	background:#818181;
-	transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-}
-.forgot {
-  text-align: right;
-}
-.login-bottom {
-  background: #E15748;
-  padding: 30px 65px;
-  border-radius: 0px 0px 25px 25px;
-  -webkit-border-radius:  0px 0px 25px 25px;
-  -moz-border-radius: 0px 0px 25px 25px;
-  -o-border-radius: 0px 0px 25px 25px;
-  text-align: center;
-  border-top: 2px solid #AD4337;
-}
-.login-bottom h3 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-}
-.login-bottom h3 a {
-  font-size: 25px;
-  font-weight: 500;
-  color: #fff;
-}
-.login-bottom h3 a:hover {
-	color:#696969;
-	transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-}
-.copyright {
-  padding: 150px 0px 0px 0px;
-  text-align: center;
-}
-.copyright p {
-  font-size: 15px;
-  font-weight: 400;
-  color: #fff;
-}
-.copyright p a{
-  font-size: 15px;
-  font-weight: 400;
-  color: #E15748;
-}
-.copyright p a:hover{
-	color: #fff;
-	 transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-}
-</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>容灾管理平台</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/font-awesome.min.css">
+  <link rel="stylesheet" href="public/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="public/css/all-skins.min.css">
+  <link rel="stylesheet" href="public/css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
-<body>
-<div class="login" id="rrapp">
-	<div class="login-top">
-		<h1>LOGIN FORM</h1>
-		
-			<!-- <input type="hidden" name="${ _csrf.parameterName}" value="${ _csrf.token}" /> -->
-			<input type="text" name="username" placeholder="用户名" />
-			<input type="password" name="password" placeholder="密码" />
-	    	<div class="forgot">
-	    		<a href="#">forgot Password</a>
-	    		<input type="submit" value="Login"  @click="login" >
-	   		</div>
-	    
-	</div>
-	<div class="login-bottom"></div>
-</div>	
-</body>
+<body class="hold-transition login-page">
+<div class="login-box" id="rrapp" v-cloak>
+  <div class="login-logo">
+    <b>容灾管理平台</b>
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+      <p class="login-box-msg">用户登录</p>
+      <div v-if="error" class="alert alert-danger alert-dismissible">
+        <h4 style="margin-bottom: 0px;"><i class="fa fa-exclamation-triangle"></i> {{errorMsg}}</h4>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" v-model="username" placeholder="账号">
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" v-model="password" placeholder="密码">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" v-model="captcha" @keyup.enter="login" placeholder="验证码">
+        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+      </div>
+      <!-- <div class="form-group has-feedback">
+        <img alt="如果看不清楚，请单击图片刷新！" class="pointer" :src="src" @click="refreshCode">
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" @click="refreshCode">点击刷新</a>
+      </div> -->
+      
+      
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="checkbox icheck">
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-4">
+          <button type="button" class="btn btn-primary btn-block btn-flat" @click="login">登录</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    <!-- /.social-auth-links -->
 
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
 <script src="public/libs/jquery.min.js"></script>
 <script src="public/libs/vue.min.js"></script>
 <script src="public/libs/bootstrap.min.js"></script>
@@ -207,8 +78,10 @@ var vm = new Vue({
 	data:{
 		username: '',
 		password: '',
+		captcha: '',
 		error: false,
 		errorMsg: '',
+		//src: 'captcha.jpg'
 	},
 	beforeCreate: function(){
 		if(self != top){
@@ -216,12 +89,15 @@ var vm = new Vue({
 		}
 	},
 	methods: {
+		refreshCode: function(){
+			//this.src = "captcha.jpg?t=" + $.now();
+		},
 		login: function (event) {
-			alert("11111");
-			var data = "username="+vm.username+"&password="+vm.password
+			//var data = "username="+vm.username+"&password="+vm.password+"&captcha="+vm.captcha;
+			var data = "username="+vm.username+"&password="+vm.password;
 			$.ajax({
 				type: "POST",
-			    url: "/j_spring_security_check",
+			    url: "/auth_login",
 			    data: data,
 			    dataType: "json",
 			    success: function(result){
@@ -231,6 +107,7 @@ var vm = new Vue({
 						vm.error = true;
 						vm.errorMsg = result.msg;
 						
+						vm.refreshCode();
 					}
 				}
 			});
@@ -238,4 +115,5 @@ var vm = new Vue({
 	}
 });
 </script>
+</body>
 </html>
